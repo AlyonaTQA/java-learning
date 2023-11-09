@@ -49,7 +49,7 @@ public class SecondLessonExercises {
         } else if (myNumber < 0) {
             System.out.println("Number is Negative!");
         } else {
-            System.out.println("Number in Positive!");
+            System.out.println("Number is Positive!");
         }
 
         //BMI (Body Mass Index) Calculator: Take a person's weight
@@ -83,13 +83,13 @@ public class SecondLessonExercises {
             System.out.println("Extremely high health risk");
         }
 
-//Password Strength Checker: Ask the user to enter a password and then
-//use if statements to determine its strength (e.g., weak, medium, strong)
-//based on criteria such as length, special characters, and uppercase letters.
-//If the password is less than 8 characters, lacks special characters, or lacks
-//uppercase letters, it's considered "weak."
-//If the password is between 8 and 11 characters, it's considered "of medium strength."
-//If the password is 12 or more characters, it's considered "strong."
+        //Password Strength Checker: Ask the user to enter a password and then
+        //use if statements to determine its strength (e.g., weak, medium, strong)
+        //based on criteria such as length, special characters, and uppercase letters.
+        //If the password is less than 8 characters, lacks special characters, or lacks
+        //uppercase letters, it's considered "weak."
+        //If the password is between 8 and 11 characters, it's considered "of medium strength."
+        //If the password is 12 or more characters, it's considered "strong."
 
         int passwordCharacterCount = 12;
 
@@ -101,5 +101,28 @@ public class SecondLessonExercises {
             System.out.println("Password is strong!");
         }
 
+        //Write a program that accepts a number (1-7) as input and uses if-else statements
+        //to determine the corresponding day of the week (e.g., 1 is Sunday, 2 is Monday, etc.).
+
+        System.out.println("Please enter number: ");
+        int dayOfWeek = Integer.parseInt(myScanner.next());
+
+        if (dayOfWeek == 1) {
+            System.out.println("Today is Sunday!");
+        } else if (dayOfWeek == 2) {
+            System.out.println("Today us Monday!");
+        } else if (dayOfWeek == 3) {
+            System.out.println("Today is Tuesday!");
+        } else if (dayOfWeek == 4) {
+            System.out.println("Today is Wednesday!");
+        } else if (dayOfWeek == 5) {
+            System.out.println("Today is Thursday!");
+        } else if (dayOfWeek == 6) {
+            System.out.println("Today is Friday!");
+        } else if (dayOfWeek == 7) {
+            System.out.println("Today is Saturday!");
+        } else {
+            System.out.println("Incorrect day of week!");
+        }
     }
 }
